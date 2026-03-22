@@ -11,7 +11,7 @@ export default function Navbar() {
             <div className="flex items-center justify-between">
                 {/* Logo */}
                 <div className="text-xl font-bold cursor-pointer" style={{ color: "var(--color-light)" }}>
-                    LOGO
+                    RC
                 </div>
 
                 {/* Menu desktop - visibile solo su schermi md e superiori */}
@@ -23,7 +23,7 @@ export default function Navbar() {
 
                 {/* Bottone hamburger - visibile solo su mobile */}
                 <button
-                    className="md:hidden text-2xl"
+                    className="md:hidden text-2xl" style={{ color: "var(--color-accent"}}
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     ☰

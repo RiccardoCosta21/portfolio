@@ -8,7 +8,7 @@ function Home() {
     const { repos, loading, error } = useGithubRepos("RiccardoCosta21");
 
     return (
-        <div className="min-h-screen text-white" style={{ backgroundColor: "var(--color-primary)" }}>
+        <div className="min-h-screen text-white">
             <Hero />
 
             {/* Messaggio di caricamento */}
