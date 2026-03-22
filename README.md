@@ -31,14 +31,3 @@ Per mostrare un nuovo progetto nel portfolio:
 4. Aggiungi il topic **`portfolio-project`**
 
 Il portfolio si aggiornerà automaticamente!
-
-## Avvio in locale
-```bash
-npm install
-npm run dev
-```
-
-## Deploy
-```bash
-npm run build
-```
