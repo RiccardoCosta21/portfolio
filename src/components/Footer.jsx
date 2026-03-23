@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 export default function Footer() {
     return (
         <footer 
-            className="p-4 mt-8"
+            className="p-4 mt-2"
             style={{ backgroundColor: "var(--color-dark)", color: "var(--color-light)" }}
         >
             <div className="flex justify-between items-center mb-4">

@@ -8,7 +8,7 @@ function Home() {
     const { repos, loading, error } = useGithubRepos("RiccardoCosta21");
 
     return (
-        <div className="min-h-screen text-white">
+        <div className="min-h-screen text-white" style={{ backgroundColor: "var(--color-dark)" }}>
             <Hero 
                 title="Benvenuto nel mio portfolio"
                 subtitle="Studente di informatica e appassionato di sviluppo"
@@ -31,8 +31,7 @@ function Home() {
             )}
 
             {/* Griglia delle card dei progetti */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-4 md:px-8 lg:px-16 py-8 justify-items-center"
-                style={{ backgroundColor: "var(--color-dark)" }}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-4 md:px-8 lg:px-16 py-8 justify-items-center">
                 {repos.map(repo => (
                     // Rimuove "portfolio-project" dai topics prima di mostrarli
                     <Card
