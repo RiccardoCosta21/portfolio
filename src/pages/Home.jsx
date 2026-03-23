@@ -9,7 +9,14 @@ function Home() {
 
     return (
         <div className="min-h-screen text-white">
-            <Hero />
+            <Hero 
+                title="Benvenuto nel mio portfolio"
+                subtitle="Studente di informatica e appassionato di sviluppo"
+                buttons={[
+                    { label: "I miei progetti", to: "/progetti" },
+                    { label: "Chi sono", to: "/chi-sono", outline: true },
+                ]}
+            />
 
             {/* Messaggio di caricamento */}
             {loading && (
